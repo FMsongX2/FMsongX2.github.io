@@ -1,19 +1,28 @@
 # Entries of the 이력 tab, newest first within each year.
-# kind: award | finalist | activity | opensource
+# kind: award | finalist | activity | opensource | algorithm
 # date: YYYY-MM (start month for ongoing activities); end: YYYY-MM, "현재", or omitted
+# featured: true shows the entry as a card above the timeline instead of in it.
+# prize: official prize for the placing (team total for team entries).
+# post: URL of the 수상소감 post, e.g. /posts/aitop100-review/
 
 - date: 2026-11
   kind: award
   title: AI TOP 100 2026 전국 4등 (은상)
   org: 카카오임팩트 · 과학기술정보통신부
+  featured: true
+  prize: 500만원
 - date: 2026-11
   kind: award
   title: 제5회 AI 스마트워크톤 경진대회 대상
   org: AISH · 후원사 티링크
+  featured: true
+  prize: 200만원
 - date: 2026-11
   kind: award
   title: 2026 하반기 AI 경진대회 학생 부문 장려상
   org: 중소기업중앙회 · 한국경영기술지도사회
+  featured: true
+  prize: 50만원
 - date: 2026-11
   kind: award
   title: ENDPoinT 2026 해커톤 3등
@@ -59,6 +68,8 @@
   kind: award
   title: DACON 딥보이스 탐지 AI 경진대회 TOP 4 (우수상)
   org: 행정안전부 · NIA
+  featured: true
+  prize: 300만원
 - date: 2026-10
   kind: award
   title: 디스커버리학기 과제 장려상 (교육혁신원장상)
@@ -91,6 +102,10 @@
   kind: opensource
   title: Live2D Cubism Contributor
   org: 공식 Unity SDK에 기여 병합
+- date: 2026-04
+  kind: algorithm
+  title: 백준 Diamond V 달성
+  org: solved.ac songsong97 · 2026.04.16 레이팅 2211
 - date: 2026-03
   end: 현재
   kind: activity

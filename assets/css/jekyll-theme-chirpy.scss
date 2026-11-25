@@ -95,3 +95,59 @@
     }
   }
 }
+
+.featured-awards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+
+  .featured-date {
+    font-size: 0.8rem;
+    color: var(--text-muted-color);
+  }
+
+  .featured-title {
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1.4;
+  }
+
+  .featured-org {
+    font-size: 0.85rem;
+    color: var(--text-muted-color);
+  }
+
+  .featured-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 0.6rem;
+  }
+
+  .featured-prize {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #b7791f;
+  }
+
+  .featured-post {
+    font-size: 0.85rem;
+  }
+}
+
+.boj-badge img {
+  max-width: 100%;
+  height: auto;
+}
