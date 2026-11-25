@@ -6,7 +6,7 @@ order: 0
 
 {% assign kinds = "award:수상,finalist:Finalist,activity:활동,opensource:오픈소스" | split: "," %}
 
-백준 [Diamond V](https://solved.ac/profile/songsong97){: .text-nowrap } · solved.ac `songsong97`
+<a class="boj-badge" href="https://solved.ac/profile/songsong97" target="_blank" rel="noopener"><img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=songsong97" alt="백준 songsong97 solved.ac 티어 배지" width="350" height="170"></a>
 
 <div class="timeline">
 {% assign groups = site.data.timeline | group_by_exp: "item", "item.date | slice: 0, 4" %}
