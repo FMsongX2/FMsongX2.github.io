@@ -21,7 +21,7 @@ $accent-ink: #c64661;
 $accent-deep: #b22f4f;
 $rim: #f4a6b8;
 $track: #fce3ea;
-$wash: #fdf6f8;
+$wash: #fcfafb;
 $navy: #1f325c;
 $sub-text: #7c8199;
 $brand: linear-gradient(90deg, $accent-light, $accent);
@@ -44,18 +44,18 @@ $glow: 0 4px 12px rgb(255 94 126 / 25%);
   --checkbox-checked-color: #{$accent};
   --menu-highlight-bg: #{$track};
 
-  --sidebar-bg: #{$accent};
-  --sidebar-border-color: transparent;
-  --sidebar-muted-color: rgb(255 255 255 / 85%);
-  --sidebar-active-color: #{$accent-deep};
-  --sidebar-hover-bg: rgb(255 255 255 / 22%);
-  --sidebar-btn-bg: rgb(255 255 255 / 18%);
-  --sidebar-btn-color: #ffffff;
-  --site-title-color: #ffffff;
-  --site-subtitle-color: rgb(255 255 255 / 85%);
-  --avatar-border-color: rgb(255 255 255 / 70%);
+  --sidebar-bg: #ffffff;
+  --sidebar-border-color: #{$track};
+  --sidebar-muted-color: #{$sub-text};
+  --sidebar-active-color: #{$accent-ink};
+  --sidebar-hover-bg: #fff3f6;
+  --sidebar-btn-bg: #fff3f6;
+  --sidebar-btn-color: #{$accent-ink};
+  --site-title-color: #{$navy};
+  --site-subtitle-color: #{$sub-text};
+  --avatar-border-color: #{$track};
 
-  --topbar-bg: rgb(253 246 248 / 80%);
+  --topbar-bg: rgb(252 250 251 / 85%);
   --topbar-text-color: #{$navy};
   --search-border-color: #{$track};
   --search-icon-color: #{$rim};
@@ -69,7 +69,7 @@ $glow: 0 4px 12px rgb(255 94 126 / 25%);
   --btn-share-hover-color: #{$accent};
   --card-bg: #ffffff;
   --card-hover-bg: #{$track};
-  --card-shadow: #{$row-shadow}, #{$rim} 0 0 0 1px;
+  --card-shadow: 0 4px 14px rgb(31 42 77 / 5%), #{$track} 0 0 0 1px;
   --footnote-target-bg: #{$track};
   --tb-odd-bg: #fffafb;
   --tb-border-color: #{$track};
@@ -94,18 +94,17 @@ $glow: 0 4px 12px rgb(255 94 126 / 25%);
   background: rgb(255 142 167 / 35%);
 }
 
-/* Sidebar: the coral gradient panel of the store hero */
+/* Sidebar: white panel, coral only on the active item */
 #sidebar {
-  background: $brand-vertical;
+  border-right: 1px solid $track;
 
   #avatar {
-    box-shadow: 0 0 0 3px rgb(255 255 255 / 70%), 0 6px 18px rgb(178 47 79 / 30%);
+    box-shadow: 0 0 0 3px $track;
   }
 
   .site-title {
     font-weight: 800;
     letter-spacing: -0.5px;
-    text-shadow: 0 2px 8px rgb(178 47 79 / 25%);
   }
 
   .site-subtitle {
@@ -117,27 +116,13 @@ $glow: 0 4px 12px rgb(255 94 126 / 25%);
     opacity: 1;
 
     a.nav-link {
-      color: #ffffff;
-
-      i {
-        opacity: 1;
-      }
+      color: #4a4f66;
     }
 
     &.active .nav-link {
-      background: #ffffff;
-      box-shadow: 0 4px 12px rgb(178 47 79 / 25%);
-    }
-  }
-
-  .sidebar-bottom {
-    a,
-    .icon-border {
-      color: #ffffff;
-    }
-
-    .icon-border {
-      background-color: rgb(255 255 255 / 60%);
+      color: $accent-ink;
+      background: #fff0f4;
+      box-shadow: inset 3px 0 0 $accent;
     }
   }
 }
@@ -149,17 +134,16 @@ $glow: 0 4px 12px rgb(255 94 126 / 25%);
   font-weight: 700;
 }
 
-/* Post list: white cards with the pink rim and a wash toward the right edge */
+/* Post list: white cards with a faint pink rim */
 #post-list .card-wrapper.card {
-  border-radius: 18px;
-  background: linear-gradient(100deg, #ffffff 55%, #fff0f4 100%);
+  border-radius: 16px;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
 
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgb(255 94 126 / 18%), 0 0 0 1.5px $accent-light;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgb(31 42 77 / 8%), 0 0 0 1px $rim;
   }
 
   .card-title {
@@ -170,20 +154,21 @@ $glow: 0 4px 12px rgb(255 94 126 / 25%);
 
   .post-meta i.far,
   .post-meta i.fas {
-    color: $accent-light;
+    color: $rim;
   }
 }
 
-/* Page titles (Categories, Tags, Archives, About): the slanted coral tag */
-h1.dynamic-title {
+/* Page titles (Categories, Tags, Archives, About): navy with a slanted coral marker */
+h1.dynamic-title::before {
+  content: '';
   display: inline-block;
-  position: relative;
-  padding: 0.35rem 2.25rem 0.35rem 1.25rem;
-  color: #ffffff;
-  font-weight: 800;
+  width: 0.6rem;
+  height: 0.9em;
+  margin-right: 0.6rem;
+  vertical-align: -0.08em;
   background: $brand;
-  clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0 100%);
-  filter: drop-shadow($glow);
+  transform: skewX(-14deg);
+  border-radius: 2px;
 }
 
 /* Headings: bold navy, as in the app */
