@@ -1,0 +1,103 @@
+# Entries of the 이력 tab, newest first within each year.
+# kind: award | finalist | activity | opensource
+# date: YYYY-MM (start month for ongoing activities); end: YYYY-MM, "현재", or omitted
+
+- date: 2026-11
+  kind: award
+  title: AI TOP 100 2026 전국 4등 (은상)
+  org: 카카오임팩트 · 과학기술정보통신부
+- date: 2026-11
+  kind: award
+  title: 제5회 AI 스마트워크톤 경진대회 대상
+  org: AISH · 후원사 티링크
+- date: 2026-11
+  kind: award
+  title: 2026 하반기 AI 경진대회 학생 부문 장려상
+  org: 중소기업중앙회 · 한국경영기술지도사회
+- date: 2026-11
+  kind: award
+  title: ENDPoinT 2026 해커톤 3등
+  org: 서울과기대 컴퓨터공학과
+- date: 2026-11
+  kind: award
+  title: 나랏돈 50조 찾기 해커톤 TOP 35 (상금)
+  org: savetax.now
+- date: 2026-11
+  kind: award
+  title: 외국발 허위정보 대응 대학생 아이디어 공모전 우수상
+  org: KAIST 안보융합원
+- date: 2026-11
+  kind: award
+  title: 제4회 청소년 안전 AI 영상 공모전 대상
+  org: 서울시립청소년활동진흥센터
+- date: 2026-11
+  kind: award
+  title: 2026 AI 이미지 콘테스트 장려상
+  org: 한국사진작가협회
+- date: 2026-11
+  kind: finalist
+  title: 2026 청도 바이브코딩 해커톤 Finalist
+  org: 해커그라운드
+- date: 2026-11
+  kind: finalist
+  title: 충남 로컬메이드 제품개발 공모전 Finalist
+  org: 선문대 지역바이오융합원
+- date: 2026-11
+  kind: finalist
+  title: 데이터+AI 혁신 챌린지 데이터 문제해결 부문 Finalist
+  org: 한국데이터산업진흥원
+- date: 2026-11
+  kind: finalist
+  title: DACON 항만 AI 기술 공모전 TOP 13
+  org: DACON
+- date: 2026-11
+  end: 현재
+  kind: activity
+  title: 정부지원사업 공고 자동화 외주
+  org: 1인 유상 계약
+- date: 2026-10
+  kind: award
+  title: DACON 딥보이스 탐지 AI 경진대회 TOP 4 (우수상)
+  org: 행정안전부 · NIA
+- date: 2026-10
+  kind: award
+  title: 디스커버리학기 과제 장려상 (교육혁신원장상)
+  org: 서울과기대 교육혁신원
+- date: 2026-10
+  kind: finalist
+  title: Bloom × Anthropic × Seoul AI Hub 해커톤 Finalist
+  org: Bloom · Anthropic · 서울 AI 허브
+- date: 2026-10
+  kind: finalist
+  title: Meta Global AI Developer Hackathon Finalist
+  org: Meta · Cerebral Valley
+- date: 2026-10
+  kind: finalist
+  title: K-푸드테크 해커톤 Finalist
+  org: 경상북도 · 포항시
+- date: 2026-10
+  kind: opensource
+  title: OpenDID 보안 취약점 제보
+  org: 4건 모두 유효, 공식 패치 v2.0.1
+- date: 2026-09
+  kind: award
+  title: 학생설계전공 우수상 (2등)
+  org: 서울과학기술대학교
+- date: 2026-07
+  kind: activity
+  title: AWS Training 3과정 수료
+  org: Architecting on AWS 외
+- date: 2026-06
+  kind: opensource
+  title: Live2D Cubism Contributor
+  org: 공식 Unity SDK에 기여 병합
+- date: 2026-03
+  end: 현재
+  kind: activity
+  title: AI·SW 마에스트로 17기
+  org: 창업 집중형 트랙
+- date: 2025-03
+  end: 현재
+  kind: activity
+  title: 서울과학기술대학교 학술동아리 NL
+  org: 동아리방에 상주하며 부원들과 함께 공부하고 개발하며 성장

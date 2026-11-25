@@ -13,3 +13,85 @@
   .bundle
 {%- endif -%}
 ';
+
+/* 이력 tab */
+.timeline {
+  .timeline-year {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .timeline-list {
+    border-left: 2px solid var(--main-border-color);
+    margin-left: 0.25rem;
+    padding-left: 0;
+  }
+
+  .timeline-item {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding: 0.55rem 0 0.55rem 1.25rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 1.05rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--main-bg);
+      border: 2px solid var(--timeline-node-bg);
+    }
+  }
+
+  .timeline-date {
+    flex: 0 0 auto;
+    min-width: 7.5rem;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.1rem;
+  }
+
+  .timeline-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 0.5rem;
+    row-gap: 0.15rem;
+  }
+
+  .timeline-kind {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.05rem 0.45rem;
+    border-radius: 4px;
+    border: 1px solid var(--btn-border-color);
+    color: var(--text-muted-color);
+  }
+
+  .kind-award {
+    color: #b7791f;
+    border-color: #f3dfb5;
+  }
+
+  .timeline-title {
+    font-weight: 600;
+    color: var(--heading-color);
+  }
+
+  .timeline-org {
+    flex-basis: 100%;
+    font-size: 0.9rem;
+    color: var(--text-muted-color);
+  }
+
+  @media (max-width: 576px) {
+    .timeline-item {
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  }
+}
